@@ -70,3 +70,6 @@ nav {
   box-sizing: border-box;
 }
 
+.form-control{
+    width: 50%;
+}
