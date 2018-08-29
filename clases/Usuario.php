@@ -36,8 +36,8 @@ public function SetPass($pass){
 }
 
 public function GetNombre(){
-     return $this->nombre;
-    }
+    return $this->nombre;
+}
 
 public function GetApellido(){
     return $this->apellido;
