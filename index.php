@@ -1,4 +1,4 @@
 ﻿<?php
 header('location:inicio');
 ?>
-<!-- hola bebeto -->
+<!-- hola bebeto <3 -->
