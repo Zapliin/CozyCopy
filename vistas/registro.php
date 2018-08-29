@@ -37,8 +37,11 @@
                </div>
 
                 <div class="form-group">
-                   <label>DNI</label>
-                   <input type="text" name="dni" class="form-control" required="" placeholder="Ingrese su DNI">
+                   <label>Tipo</label>
+                   <select name="rango" class="form-control" required="">
+                        <option value="2">Profesor</option>
+                        <option value="3">Alumno</option>
+                    </select>
                </div>
 
                <div class="form-group">
