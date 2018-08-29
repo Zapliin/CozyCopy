@@ -9,8 +9,9 @@
 </head>
 <body>
 
-<?php include('../inc/navbar.php'); ?>
-<?php include('../inc/izqadministrador.php') ?>
+<?php  require('DAO.php');
+       include('navbar.php');
+       include('izqadministrador.php') ?>
 
 <div class="contenido">
   <table border="1" width="97%" align="center" cellpadding="3">
@@ -22,11 +23,14 @@
       <td>Pass</td>
     </tr>
     <tr>
-      <td><?php $consultaID = "select ID_usuario from usuarios" ?></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+      <?php $consultaID = "SELECT ID_usuario FROM usuarios";
+      $resultado = consultaSelect($consultaID);
+      echo $resultado; ?>
     </tr>
   </table>
 </div>
