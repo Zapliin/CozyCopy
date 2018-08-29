@@ -10,7 +10,7 @@
 <body>
 
 <!-- Barra principal o "Navbar" -->
-<?php include('../inc/navbarblank.php'); ?>
+<?php include('../inc/navbar.php'); ?>
 
 <div class=" container container-fluid"> <br> <br>
 
@@ -19,7 +19,7 @@
 
   <div class="row">
        <div class="col-xs-9 col-md-3">
-          <form class="form-horizontal" method="post" action="registrar">
+          <form class="form-horizontal" method="post" action="../inc/procesar.php">
 
                <div class="form-group">
                    <label>Nombre</label>

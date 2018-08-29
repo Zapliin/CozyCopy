@@ -6,34 +6,37 @@
 
     <?php include('../inc/head.php'); ?>
 
-</head>
-<body>
+   </head>
+   <body>
 
-<?php  require('DAO.php');
-       include('navbar.php');
-       include('izqadministrador.php') ?>
+   <?php 
+      require('DAO.php');
+      include('navbar.php');
+      include('izqadministrador.php') ?>
 
-<div class="contenido">
-  <table border="1" width="97%" align="center" cellpadding="3">
-    <tr>
+     <div class="contenido">
+     <table class="mt-2 mb-2" border="1" width="98%" align="center" cellpadding="3">
+     <tr>
       <td>Id_Usuario</td>
       <td>Nombre</td>
       <td>Apellido</td>
       <td>Email</td>
-      <td>Pass</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <?php $consultaID = "SELECT ID_usuario FROM usuarios";
-      $resultado = consultaSelect($consultaID);
-      echo $resultado; ?>
-    </tr>
-  </table>
-</div>
+      <td>Rango</td>
+     </tr>
+     
+      <?php $consulta = "SELECT *FROM usuarios";
+      $result = consultaSelect($consulta);
+      while($fila = mysqli_fetch_array($result)){
+         echo "<tr><td> $fila[ID_usuario]</td>";
+         echo "<td>$fila[Nombre]</td>";
+         echo "<td>$fila[Apellido]</td>";
+         echo "<td>$fila[Email]</td>";
+         echo "<td>$fila[Rango]</td></tr>";
+        }
+      ?>
+      
+   </table>
+    </div>
 
-</body>
+ </body>
 </html>
