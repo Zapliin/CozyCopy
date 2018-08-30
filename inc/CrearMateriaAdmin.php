@@ -14,7 +14,7 @@
 
 <div class="contenido">
 
-  <form class="form-horizontal ml-3 mt-2" method="post" action="procadmin">
+  <form class="form-horizontal ml-3 mt-2" method="post" action="procadmin.php">
   <h2>Agregar materia</h2>
   <div class="form-group">
    <label>Nombre</label>
