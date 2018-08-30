@@ -16,28 +16,24 @@
 
      <div class="contenido">
      <table class="mt-2 mb-2 text-white" border="2" width="98%" align="center" cellpadding="3">
+         <tr>
+             <td>ID_curso</td>
+             <td>Año</td>
+             <td>División</td>
+             <td>Especialidad</td>
+         </tr>
 
-     <tr>
-      <td>Id_Usuario</td>
-      <td>Nombre</td>
-      <td>Apellido</td>
-      <td>Email</td>
-      <td>Rango</td>
-     </tr>
-    
-      <?php $consulta = "SELECT *FROM usuarios";
+        <?php $consulta = "SELECT *FROM cursos";
       $result = consultaSelect($consulta);
       while($fila = mysqli_fetch_array($result)){
-         echo "<tr><td> $fila[ID_usuario]</td>";
-         echo "<td>$fila[Nombre]</td>";
-         echo "<td>$fila[Apellido]</td>";
-         echo "<td>$fila[Email]</td>";
-         echo "<td>$fila[Rango]</td></tr>";
+         echo "<tr><td> $fila[ID_curso]</td>";
+         echo "<td>$fila[Ano]</td>"; /* Cambiar este campo en la base de datos a "Año" da error, dejarlo en "Ano" */
+         echo "<td>$fila[Division]</td>";
+         echo "<td>$fila[Especialidad]</td></tr>";
         }
       ?>
-      
-   </table>
-    </div>
 
- </body>
+    </table>
+    </div>
+</body>
 </html>

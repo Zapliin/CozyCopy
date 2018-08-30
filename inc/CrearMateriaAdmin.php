@@ -18,7 +18,9 @@
   <h2>Agregar materia</h2>
   <div class="form-group">
    <label>Nombre</label>
+   <div class="col-3">
      <input type="text" name="nmateria" class="form-control" required="">
+</div>
   </div>
 
    <div class="form-group">

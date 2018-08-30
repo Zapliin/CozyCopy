@@ -17,17 +17,23 @@
   <h2>Crear curso</h2>
   <div class="form-group">
    <label>Año</label>
+   <div class="col-3">
      <input type="text" name="anio" class="form-control" required="">
+   </div>
   </div>
 
   <div class="form-group">
   <label>División</label>
+  <div class="col-3">
   <input  type="text" name="div" class="form-control" required="">
+</div>
   </div>
 
   <div class="form-group">
   <label>Especialidad</label>
+  <div class="col-3">
   <input type="text" name="esp" class="form-control" required="">
+</div>
   </div>
 
    <div class="form-group">
