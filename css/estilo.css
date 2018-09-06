@@ -37,8 +37,8 @@ nav {
     /* texto del index */
 .textoprincipal{
   margin-top: 10%;
-  margin-left: 40%;
-  color: white;
+  margin-left: 36%; 
+  color: rgb(0, 0, 0);
 }
 
     /* ajustes del contenido en alumnos.php y profesores.php */
