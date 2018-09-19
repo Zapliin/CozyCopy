@@ -9,7 +9,7 @@ require('DAO.php');
         $nombre = $_POST['nombre'];
         $apellido = $_POST['apellido'];
         $email = $_POST['email'];
-        $rango = $_POST['tipo'];
+        $rango = $_POST['rango'];
         $pass = md5($_POST['pass']);
         $repass = $_POST['repass'];
 

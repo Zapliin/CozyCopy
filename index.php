@@ -10,16 +10,14 @@
 <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-<?php include('inc/navbarblank.php'); ?>
+<?php include('inc/navbarindex.php'); ?>
 
-<p class="textoprincipal">Registrate, inscribite un tu curso y descargá tus apuntes</p>
+<p class="textoprincipal">Registrate, inscribite un tu curso y descargá tus apuntes.</p>
 
 <footer class="page-footer font-small fixed-bottom ml-2 mb-2">
-    
-<a href="">¿Quienes somos?</a> -
-<a href="">¿Cuales son nuestros objetivos?</a> -
-<a href="">Contacto</a>
-
+<a href="inc/QuienesSomos.php">¿Quienes somos?</a> -
+<a href="inc/Objetivos.php">¿Cuales son nuestros objetivos?</a> -
+<a href="inc/Contacto.php">Contacto</a>
 </footer>
 
 </body>
