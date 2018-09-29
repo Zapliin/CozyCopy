@@ -34,4 +34,5 @@
     	  $result = mysqli_query($conexion, $consulta);
           return $result;
     }
+    //para el update uso el del select y en $consulta hago un update.
 ?>

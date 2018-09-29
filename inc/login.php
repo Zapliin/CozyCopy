@@ -2,32 +2,39 @@
 
 require('DAO.php');
 
+//el !isset es si no esta seteado valida que se haya ejecutado el metodo post desde el form
+//basicamente hace una validacion el || significa o 
 if(!isset($_POST['email']) || $_POST['email']==''|| $_POST['pass']=='')exit;
 
-$validar="select Rango from usuarios";
+
 $user=$_POST['email'];
 $pass=md5($_POST['pass']);
-$consulta="select *from usuarios where email='email' AND pass='pass'";
+$consulta="select *from usuarios where email= '$user'  AND pass= '$pass'";
+//echo $consulta;
+
 $respuesta=consultaSelect($consulta);
-$respuesta=mysqli_fetch_assoc($respuesta);//convierte en array
-//var_dump($respuesta);
+
 if($respuesta!=null)
 {
+$respuesta=mysqli_fetch_assoc($respuesta);//convierte en array
+//var_dump($respuesta);
+
+
 	session_start();
-	$_SESSION['ID_usuario']=respuesta['ID_usuario'];
-	$_SESSION['Email']=respuesta['Email'];
-	$_SESSION['Nombre']=respuesta['Nombre'];
+	$_SESSION['ID_usuario']= $respuesta['ID_usuario'];
+	$_SESSION['Email']= $respuesta['Email'];
+	$_SESSION['Nombre']= $respuesta['Nombre'];
+	$_SESSION['rango']= $respuesta['Rango'];
 }
+//echo $respuesta["Nombre"] ;
 
-echo $validar;
-
-if($validar == 3){
+if($respuesta['Rango'] == 3){
 	header('location:../vistas/alumnos.php');
 }
-if($validar == 2){
+if($respuesta['Rango']  == 2){
 	header('location:../vistas/profesores.php');
 }
-if($validar != 2 || $validar != 3){
+if($respuesta['Rango']  != 2 || $respuesta['Rango']  != 3){
 	echo "Se produjo un error, intente mas tarde";
 }
 
