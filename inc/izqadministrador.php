@@ -13,6 +13,6 @@
   </ul>
   <ul>Cursos
     <li><a class="text-white" href="../inc/CrearCursoAdmin.php">Crear Curso o añadir una materia</a></li>
-    <li><a class="text-white" href="../inc/VerCursosAdmin.php">Ver Cursos</li>
+    <li><a class="text-white" href="../inc/VerCursosAdmin.php">Ver Cursos</a></li>
   </ul>
 </div>

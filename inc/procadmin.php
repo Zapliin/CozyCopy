@@ -13,7 +13,7 @@ require('DAO.php');
         $resultado = consultaInsert($consulta);
 
         echo "La materia fue cargada correctamente";
-        
+        header('location:CrearMateriaAdmin.php');
     }
 
 ?>

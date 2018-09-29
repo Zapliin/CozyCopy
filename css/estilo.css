@@ -38,7 +38,7 @@ nav {
 .textoprincipal{
   margin-top: 10%;
   margin-left: 36%; 
-  color: rgb(0, 0, 0);
+  color: #35344b;
 }
 
     /* ajustes del contenido en alumnos.php y profesores.php */
@@ -73,3 +73,12 @@ nav {
 .asdf{
     color: rgb(255, 255, 255);
 }
+
+a {
+    color: #35344b;
+  }
+  
+  a:hover {
+    color: #35344b;
+    text-decoration: none;
+  }

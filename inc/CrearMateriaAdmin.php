@@ -17,15 +17,15 @@
   <form class="form-horizontal ml-3 mt-2" method="post" action="procadmin.php">
   <h2>Agregar materia</h2>
   <div class="form-group">
-   <label>Nombre</label>
-   <div class="col-3">
-     <input type="text" name="nmateria" class="form-control" required="">
-</div>
+    <label>Nombre</label>
+    <div class="col-3">
+      <input type="text" name="nmateria" class="form-control" required>
+    </div>
   </div>
 
-   <div class="form-group">
-      <button type="submit" class="btn btn-success">Agregar</button>
-   </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-success">Agregar</button>
+  </div>
   </form>
 </div>
 
