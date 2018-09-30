@@ -29,16 +29,25 @@ if(!isset($_SESSION['ID_usuario']) || $_SESSION['Email']=='' || $_SESSION['Nombr
 			</ul>
 		</div>
 		<!-- Logo y Nombre de la escuela -->
+		
+		
 <div class="archivos">
-<form enctype="multipart/form-data" action="../inc/uploader.php" method="post">
+<div class="mb-4 mr-2 float-right">
+		<form enctype="multipart/form-data" action="../inc/uploader.php" method="post">
       <input name="uploadedfile" type="file" />
-      <input type="submit" value="Subir archivo" />
+      <input type="submit" value="Subir archivo" name="subir"/>
+	  </div><br><br>
 </form>
 <p class="ml-3"><img src="../img/logo_escuela.jpg" width="50px" height="50px" class="mr-2">Escuela de Educacion Secundaria Tecnica Nº3 Domingo Faustino Sarmiento</p>
 <hr>
 </div>
-
-		<!-- Lugar donde van a estar los archivos subidos -->
+		<div class="ml-5 d-inline-block">
+		<iframe src="../uploads/heisenberg-breaking-bad.jpg"></iframe>
+		</div>
+		<div class="d-inline-block ml-1">
+		<iframe src="../uploads/fisica.pdf"></iframe>
+		</div>
+		<!-- Lugar donde van a estar los archivos subidos 
 <div class="container w-75 float-left ml-5">
 	<div class="row">
 		<div class="col bg-dark">
@@ -51,7 +60,7 @@ if(!isset($_SESSION['ID_usuario']) || $_SESSION['Email']=='' || $_SESSION['Nombr
 			<br><br><br><br><br>
 		</div>
 	</div>
-</div>
+</div>-->
 
 </body>
 </html>
