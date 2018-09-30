@@ -35,7 +35,14 @@ if($respuesta['Rango']  == 2){
 	header('location:../vistas/profesores.php');
 }
 if($respuesta['Rango']  != 2 || $respuesta['Rango']  != 3){
-	echo "Se produjo un error, intente mas tarde";
+	echo '<script language="javascript"> var respuesta=confirm("Error al Iniciar Sesion. Intente nuevamente");
+	if(respuesta==true){
+		window.location.href="../vistas/login.php";
+	} else{
+		window.location.href="../vistas/login.php";
+	}
+	 </script>';
+	
 }
 
 ?>
