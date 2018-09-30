@@ -52,7 +52,7 @@
  </form>
 </div>
     <div class="panel-footer">
-         ¿Todavia no estas registrado? <a href="C:\xampp\htdocs\Proyecto_Jueves\vistas\registro.php" class="text-white">Registrarme</a>
+         ¿Todavia no estas registrado? <a href="registro.php" class="text-white">Registrarme</a>
         </div>
       </div>
     </div>

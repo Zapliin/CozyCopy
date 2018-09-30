@@ -9,6 +9,16 @@
 </head>
 <body>
 
+<?php
+
+session_start();
+
+if(!isset($_SESSION['ID_usuario']) || $_SESSION['Email']=='' || $_SESSION['Nombre']==''){
+	header('location:login.php');
+}
+
+?>
+
 <!-- Barra principal o "Navbar" -->
 <?php include('../inc/navbar.php'); ?>
 
