@@ -17,10 +17,8 @@ if(!isset($_SESSION['ID_usuario']) || $_SESSION['Email']=='' || $_SESSION['Nombr
 	header('location:login.php');
 }
 include('../inc/navbarPerfiles.php');
-include ('DAO.php');
+include('DAO.php');
 ?>
-
-
 
 		<!-- lugar reservado para la publicidad en la parte derecha de la pantalla-->
 		<div class="publicidad">
