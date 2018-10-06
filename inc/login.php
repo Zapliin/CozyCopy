@@ -1,9 +1,9 @@
-<?php  
+<?php
 
 require('DAO.php');
 
 //el !isset es si no esta seteado valida que se haya ejecutado el metodo post desde el form
-//basicamente hace una validacion el || significa o 
+//basicamente hace una validacion el || significa o
 if(!isset($_POST['email']) || $_POST['email']==''|| $_POST['pass']=='')exit;
 
 
@@ -22,6 +22,7 @@ $respuesta=mysqli_fetch_assoc($respuesta);//convierte en array
 
 	session_start();
 	$_SESSION['ID_usuario']= $respuesta['ID_usuario'];
+	$_SESSION['Apellido'] = $respuesta['Apellido'];
 	$_SESSION['Email']= $respuesta['Email'];
 	$_SESSION['Nombre']= $respuesta['Nombre'];
 	$_SESSION['rango']= $respuesta['Rango'];
@@ -42,7 +43,7 @@ if($respuesta['Rango']  != 2 || $respuesta['Rango']  != 3){
 		window.location.href="../vistas/login.php";
 	}
 	 </script>';
-	
+
 }
 
 ?>

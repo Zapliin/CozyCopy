@@ -11,7 +11,7 @@
 
     <?php 
       require('DAO.php');
-      include('navbar.php');
+      include('navbarblank.php');
       include('izqadministrador.php') ?>
 
      <div class="contenido">

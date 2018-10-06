@@ -26,6 +26,7 @@ if(!isset($_SESSION['ID_usuario']) || $_SESSION['Email']=='' || $_SESSION['Nombr
 		<div class="publicidad">
 			<ul>
   				<li>Publicidad</li>
+          <li>GNU Transfer</li>
 			</ul>
 		</div>
 
@@ -35,7 +36,15 @@ if(!isset($_SESSION['ID_usuario']) || $_SESSION['Email']=='' || $_SESSION['Nombr
 <hr>
 </div>
 
-		<!-- Lugar donde van a estar los archivos subidos -->
+		<!-- Archivos subidos -->
+<div class="ml-5 d-inline-block">
+		<iframe src="../uploads/heisenberg-breaking-bad.jpg"></iframe>
+		</div>
+		<div class="d-inline-block ml-1">
+		<iframe src="../uploads/fisica.pdf" width="350"></iframe>
+		</div>
+
+		<!-- VIEJO!  Lugar donde van a estar los archivos subidos
 <div class="container w-75 float-left ml-5">
 	<div class="row">
 		<div class="col bg-dark">
@@ -48,8 +57,7 @@ if(!isset($_SESSION['ID_usuario']) || $_SESSION['Email']=='' || $_SESSION['Nombr
 			<br><br><br><br><br>
 		</div>
 	</div>
-</div>
+</div>-->
 
 </body>
 </html>
-

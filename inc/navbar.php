@@ -24,14 +24,16 @@
         <form class="form-inline my-2 my-md-0">
           <input class="form-control" type="text" placeholder="Search" aria-label="Search">
         </form>
-      </div>--> 
+      </div>-->
       <div>
       <div class="d-inline-block mr-3 text-white">
       <?php echo $_SESSION["Nombre"]; ?>
+      </div>
+      <div class="d-inline-block">
+        <a class="btn btn-primary inline-block" href="../inc/validacionPerfil.php" role="button">Perfil</a>
       </div>
       <div class="d-inline-block">
       <a class="btn btn-primary inline-block" href="../inc/CerrarSesion.php" role="button">Cerrar Sesión</a>
       </div>
       </div>
     </nav>
-    <br>

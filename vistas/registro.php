@@ -59,7 +59,7 @@
                     </div>
            </form>
            <div class="panel-footer">
-               ¿Ya tienes una cuenta? <a href="inicio" class="text-white">Inicia sesión</a> <br><br>
+               ¿Ya tienes una cuenta? <a href="login.php" class="text-white">Inicia sesión</a> <br><br>
            </div>
        </div>
    </div>

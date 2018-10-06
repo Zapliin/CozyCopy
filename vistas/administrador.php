@@ -12,5 +12,5 @@
 <body>
 
 <!-- Barra principal o "Navbar" -->
-<?php include('../inc/navbar.php'); ?>
+<?php include('../inc/navbarblank.php'); ?>
 <?php include('../inc/izqadministrador.php') ?>
