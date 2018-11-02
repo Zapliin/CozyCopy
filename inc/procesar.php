@@ -20,14 +20,14 @@ require('DAO.php');
             }
 
             if($_POST['rango']==2 || $_POST['rango']==3){
-                header('location:../vistas/login.php');
+                header('location:../vistas/login');
                 }
         }else{
             echo '<script language="javascript"> var respuesta=confirm("Error al Registrarte. Compruebe los datos ingresados e intente nuevamente");
 	if(respuesta==true){
-		window.location.href="../vistas/registro.php";
+		window.location.href="../vistas/registro";
 	} else{
-		window.location.href="../vistas/registro.php";
+		window.location.href="../vistas/registro";
 	}
 	 </script>';
         }

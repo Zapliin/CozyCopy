@@ -30,17 +30,17 @@ $respuesta=mysqli_fetch_assoc($respuesta);//convierte en array
 //echo $respuesta["Nombre"] ;
 
 if($respuesta['Rango'] == 3){
-	header('location:../vistas/alumnos.php');
+	header('location:../vistas/alumnos');
 }
 if($respuesta['Rango']  == 2){
-	header('location:../vistas/profesores.php');
+	header('location:../vistas/profesores');
 }
 if($respuesta['Rango']  != 2 || $respuesta['Rango']  != 3){
 	echo '<script language="javascript"> var respuesta=confirm("Error al Iniciar Sesion. Intente nuevamente");
 	if(respuesta==true){
-		window.location.href="../vistas/login.php";
+		window.location.href="../vistas/login";
 	} else{
-		window.location.href="../vistas/login.php";
+		window.location.href="../vistas/login";
 	}
 	 </script>';
 

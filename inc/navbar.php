@@ -30,10 +30,10 @@
       <?php echo $_SESSION["Nombre"]; ?>
       </div>
       <div class="d-inline-block">
-        <a class="btn btn-primary inline-block" href="../inc/validacionPerfil.php" role="button">Perfil</a>
+        <a class="btn btn-primary inline-block" href="../inc/validacionPerfil" role="button">Perfil</a>
       </div>
       <div class="d-inline-block">
-      <a class="btn btn-primary inline-block" href="../inc/CerrarSesion.php" role="button">Cerrar Sesión</a>
+      <a class="btn btn-primary inline-block" href="../inc/CerrarSesion" role="button">Cerrar Sesión</a>
       </div>
       </div>
     </nav>

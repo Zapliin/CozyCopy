@@ -3,11 +3,11 @@
 session_start();
 
 if($_SESSION['rango']==3){
-    header('location: ../vistas/alumnos.php');
+    header('location: ../vistas/alumnos');
 }
 
 if($_SESSION['rango']==2){
-    header('location: ../vistas/profesores.php');
+    header('location: ../vistas/profesores');
 }
 
 echo $_SESSION['rango'];
