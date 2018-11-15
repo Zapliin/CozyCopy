@@ -13,14 +13,15 @@ $ruta= $_FILES['uploadedfile']['tmp_name'];
 
 if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path))
 { 
-    echo "El archivo fue subido correctamente";
-    /*$consulta="insert into archivos(Ruta) values('$ruta')";
-    $resultado = consultaInsert($consulta);*/
+    echo "Archivo subido exitosamente";
+
+    $consulta="insert into archivos(Ruta) values('$ruta')";
+    $resultado = consultaInsert($consulta);
 } 
 
 else
 {
-    echo "Ha ocurrido un error, intente nuevamente";
+    echo "Ha ocurrido un error";
 }
 
 

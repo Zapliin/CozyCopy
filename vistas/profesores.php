@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>Cozy Copy</title>
     <meta name="viewport" content="width=device-width, user-scalabe=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <?php include('../inc/head.php'); ?>
+	<?php include('../inc/head.php'); ?>
 </head>
 <body>
 
@@ -17,11 +17,12 @@ if(!isset($_SESSION['ID_usuario']) || $_SESSION['Email']=='' || $_SESSION['Nombr
 	header('location:login.php');
 }
 
-?>
 
-<!-- Barra principal o "Navbar" -->
-<?php include('../inc/navbar.php'); 
-	  include('../inc/Publicidad.php');
+
+//<!-- Barra principal o "Navbar" -->
+ 	include('../inc/navbar.php'); 
+	include('../inc/Publicidad.php');
+	include('../inc/DAO.php');
 ?>
 
 
@@ -40,12 +41,14 @@ if(!isset($_SESSION['ID_usuario']) || $_SESSION['Email']=='' || $_SESSION['Nombr
 </div>
 
 		<div class="ml-5 d-inline-block">
-		<iframe src="../uploads/heisenberg-breaking-bad.jpg"></iframe>
-		</div>
-		<div class="d-inline-block ml-1">
-		<iframe src="../uploads/fisica.pdf" width="350"></iframe>
-		</div>
-
+	
+    
+      <?php $consulta = "SELECT *FROM archivos";
+      $result = consultaSelect($consulta);
+      while($fila = mysqli_fetch_array($result)){
+         echo "<iframe src=../uploads/$fila[Ruta]></iframe>";
+        }
+      ?>
 		<!--
 		 Lugar donde van a estar los archivos subidos
 <div class="container w-75 float-left ml-5">
